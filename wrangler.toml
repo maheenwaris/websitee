@@ -1,0 +1,10 @@
+name = "websitee"
+compatibility_date = "2025-06-15"
+
+[assets]
+directory = "./public"
+
+routes = [
+  { pattern = "maheenwaris.com", custom_domain = true },
+  { pattern = "www.maheenwaris.com", custom_domain = true }
+]

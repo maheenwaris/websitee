@@ -1,0 +1,266 @@
+baseURL: "https://maheenwaris.com"
+languageCode: "en-us"
+title: "Maheen Waris"
+theme: hugo-profile
+
+canonifyURLs: true
+paginate: 15
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    # Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Maheen Waris"
+  # description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/Home/Logo.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    defaultTheme: "dark"
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # colorPreference:
+  #   color: "black"
+  #   textColor: "black"
+
+    # secondaryTextColor:
+    # backgroundColor:
+    # secondaryBackgroundColor:
+    # primaryColor:
+    # secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto #Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Maheen Waris"
+    subtitle: "I’m a passionate coder and developer, crafting elegant solutions."
+    content: "I’m a passionate frontend developer dedicated to building my career by transforming ideas into engaging web experiences. With a focus on creating visually stunning and user-friendly designs, I aim to deliver impactful solutions while continuously honing my craft."
+    image: /Home/Header.png
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "/resume/Resume.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/maheenwaris
+
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/maheenwaris
+
+        - icon: fab fa-tryhackme
+          url: https://tryhackme.com/p/maheenwaris
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/Home/Header.png"
+    content: |-
+      Motivated IT professional with a solid foundation in Web Development, Responsive Web Design, and Front-End Development. I am currently enhancing my skills by learning the MERN stack to stay up-to-date with industry trends. I aim to leverage my expertise to contribute to a dynamic organization that values innovation and collaboration. With a strong work ethic, integrity, and a commitment to continuous growth, I am dedicated to achieving outstanding results.
+    skills:
+      enable: true
+      title: "My Experties includes:"
+      items:
+        - "HTML"
+        - "CSS"
+        - "Tailwind CSS"
+        - "Bootstrap"
+        - "JavaScript"
+        - "Hugo development"
+        - "Responsive sites"
+        
+  # Experience
+  experience:
+    enable: true
+    # title: "Hepton.uk"
+    items:
+      - job: "Junior Web Developer"
+        company: "Hepton"
+        companyUrl: "https://hepton.uk"
+        date: "May 2023 - present"
+        content: "I've crafted professional portfolios that elegantly showcase a range of projects and accomplishments, painting a vivid picture of my journey. My expertise extends to crafting educational websites that elevate the online learning experience, enriching how knowledge is acquired. Moreover, I've masterminded the design and optimization of websites, orchestrating seamless user interactions while enhancing overall functionality."
+
+      - job: "Intern as a Front-End Web Developer"
+        company: "C-Soft Systems"
+        companyUrl: "https://career.edu.pk"
+        date: "October 2022 - January 2023"
+        content: "During this Internship, I had the opportunity to work with a talented team of professionals and gain valuable experience in the industry. The knowledge and skills I've acquired will undoubtedly help me in my future career endeavors."
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "ADP IT Management"
+        school:
+          name: "Riphah International College"
+          url: "https://ric.edu.pk/"
+        date: "November 2023 - Present"
+        content: |-
+          - Engaging in comprehensive IT management coursework to expand technical expertise.
+          - Pursuing a degree to unlock career paths and opportunities in the IT field.
+
+
+      - title: "NDG Linux Essentials"
+        school:
+          name: "Cisco Networking Academy"
+          url: "https://www.netacad.com/"
+        date: "August 2023"
+        content: |-
+          - Successfully completed the NDG Linux Essentials course, earning certification and building a strong Linux foundation.
+          - Equipped to confidently navigate the Linux OS and tackle new IT challenges, expanding career prospects.
+          - Committed to continuous learning, eager to apply and enhance Linux skills in practical settings.
+
+      - title: "Cyber Security"
+        school:
+          name: "Hepton.uk"
+          url: "https://hepton.uk/"
+        date: "June 2023 - September 2023"
+        content: |-
+          - Expanded knowledge in the fields of cyber security, ethical hacking, and networking, through self-study and practical experience.
+          - Explored TryHackMe platform to further enhance skills and knowledge in a collaborative and enjoyable manner, working alongside peers.
+          - Actively engaged in hands-on exercises and challenges, gaining valuable experience in real world scenarios.
+
+      - title: "Cyber Security"
+        school:
+          name: "Corvit System, Faisalabad"
+          url: "http://www.corvitfsd.com/"
+        date: "May 2023 - September 2023"
+        content: |-
+          - Proficient in Linux, using commands and tools for network analysis and vulnerability assessments.
+          - Skilled in performing vulnerability scans with tools like Nmap, Cupp, and IP Advancer to strengthen security.
+          - Continuously learning new techniques to identify weaknesses and implement proactive security solutions.
+
+      - title: "Web Development"
+        school:
+          name: "Career institute, Faisalabad"
+          url: "https://career.edu.pk/"
+        date: "March 2022 - September 2022"
+        content: |-
+          - Developed custom forms to streamline data collection, enhancing my skills in user-friendly design.
+          - Designed engaging digital portfolios for assigments, improving my visual design and branding abilities.
+          - Created intuitive websites for diverse industries, deepening my knowledge of responsive design and web technologies.
+
+  #Contact
+  contact:
+    enable: true
+    title: "Contact me"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    email: mahmil219@gmail.com
+    btnName: Email me
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "Maheen waris"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+taxonomies: 
+  tag: "tags"
